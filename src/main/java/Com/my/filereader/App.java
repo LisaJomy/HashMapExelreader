@@ -20,6 +20,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *
  */
 public class App 
+
+// this code is for adding data in exel file
+
 {
     public static void main( String[] args ) throws Exception
     {
@@ -60,7 +63,7 @@ public class App
 	        {
 	            row = sheet.getRow(i+1);
 	            String key = row.getCell(0).getStringCellValue();
-	            
+	            // this is to get column number
 	            int colNumber = row.getLastCellNum();
 	            for (int j = 0 ; j < colNumber ; j++){
 	                String value = row.getCell(j).getStringCellValue();
