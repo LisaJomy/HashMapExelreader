@@ -21,7 +21,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class App 
 
-// this code is for adding data in exel file
+
 
 {
     public static void main( String[] args ) throws Exception
@@ -43,7 +43,7 @@ public class App
 	
 	public static void loadExcel() throws Exception{
 	
-	System.out.println("Loading Exel data...");
+	System.out.println("Loading data from exel files...");
 	
 	File file = new File(EXELFILELOCATION);
 	fis = new FileInputStream(file);
@@ -54,7 +54,7 @@ public class App
 	}
 	 public static Map<String, String > getMapData() throws Exception {
 	        if (sheet == null){
-	            loadExcel();
+	            loadExcel();// this command is to load exel file
 	        }
 	        Map<String, String> myMap = new HashMap<String, String>();
 
